@@ -1,0 +1,135 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-secondary);
+  min-height: 54vh;
+}
+
+.contact-content {
+  flex-grow: 1;
+}
+
+.contact-wrapper {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.contact-name {
+  margin: 0;
+  font-size: 30px;
+}
+.contact-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.contact-toggle-btn {
+  padding: 0.5rem 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.contact-toggle-btn:hover {
+  background-color: #2563eb;
+}
+
+.contact-info {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.contact-icon {
+  color: #3b82f6;
+}
+
+.contact-link {
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-link:hover {
+  color: #3b82f6;
+}
+
+.footer {
+  background-color: #161820;
+  padding: 1.5rem;
+  color: #d1d5db;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.footer-copyright {
+  font-size: 1rem;
+  color: #9ca3af;
+}
+
+.footer-tagline {
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  color: #9ca3af;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-toggle-btn:focus,
+.contact-link:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  .contact-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-info {
+    animation: none;
+  }
+}

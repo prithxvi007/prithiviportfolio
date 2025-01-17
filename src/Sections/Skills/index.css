@@ -1,0 +1,115 @@
+.skills {
+  padding: 100px 20px;
+  background-color: var(--bg-secondary);
+}
+
+h2 {
+  text-align: center;
+  color: var(--text-primary);
+  margin-bottom: 50px;
+  font-size: 36px;
+}
+.skill-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 50px;
+}
+.text-center {
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  text-align: start;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 450px) {
+  .text-center {
+    font-size: 20px;
+  }
+  .skill-item span {
+    font-size: 10px;
+  }
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+
+  max-width: 500px;
+  justify-content: flex-start;
+}
+
+.card {
+  margin-bottom: 10px;
+  width: 45%;
+}
+@media (max-width: 800px) {
+  .skill-container {
+    flex-direction: column;
+    padding-left: 0;
+    align-items: center;
+  }
+
+  .skills-grid {
+    width: 90%;
+    flex-shrink: 0;
+  }
+  .card {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 436px) {
+  .skills-grid {
+    justify-content: center;
+  }
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: var(--bg-primary);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  width: 94px;
+}
+
+@media screen and (max-width: 450px) {
+  .skill-item {
+    gap: 7px;
+    padding: 7px;
+    width: 90px;
+  }
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+}
+
+.skill-item svg {
+  font-size: 48px;
+  color: var(--accent-color);
+}
+
+.skill-item span {
+  font-size: 16px;
+  color: var(--text-primary);
+}
+
+@media (max-width: 1180px) {
+  .skills-grid {
+    max-width: 450px;
+  }
+}
